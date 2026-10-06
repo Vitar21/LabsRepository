@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class SortLogic implements SortInterface<Integer> {
+public class InsertionSort implements Sorting<Integer> {
 
     public void sort(List<Integer> numbers){
         int n = numbers.size();
