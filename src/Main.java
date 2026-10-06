@@ -15,12 +15,14 @@ public class Main {
             numbers.add(scanner.nextInt());
         }
 
-        SortInterface<Integer> sorter = new SortLogic();
+        Sorting<Integer> sorter = new InsertionSort();
         sorter.sort(numbers);
 
         for (int i = 0; i < numbers.size(); i++){
             System.out.print(numbers.get(i));
             System.out.print(i < numbers.size() - 1 ? " " : "");
         }
+
+        scanner.close();
     }
 }
